@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Slider</title>
+  </head>
+  <body id="main">
+    <i class="fas fa-chevron-circle-left prev-btn"></i>
+    <div class="frame">
+      <div class="section">
+        <div class="questions">
+          <p>Which political party looks good? :</p>
+          <input type="radio" id="html" name="fav_language" />
+          <label for="html">Akp</label><br />
+          <input type="radio" id="css" name="fav_language" />
+          <label for="css">Chp</label><br />
+          <input type="radio" id="javascript" name="fav_language" />
+          <label for="javascript">Iyi</label>
+          <p>Do you believe in God?</p>
+          <input type="radio" id="html" name="fav_language2" />
+          <label for="html2">Yes</label><br />
+          <input type="radio" id="css" name="fav_language2" checked="true" />
+          <label for="css2">No, thanks</label><br />
+          <input type="radio" id="javascript" name="fav_language2" />
+          <label for="javascript2">Maybe</label>
+          <p class="explanation">Sistemin seni tanimasi icin hassas sorular.</p>
+        </div>
+      </div>
+      <div class="section">
+        <p class="exp1">
+          Formu doldurdugunuz icin tesekkurler. (Formu dolduranin gordugu.)
+        </p>
+      </div>
+      <div class="section">
+        <div class="img" style="background-image: url('./8values.png')"></div>
+        <p class="explanation2">Programin kisiyi nasil gordugu.</p>
+      </div>
+      <div class="section">
+        <div class="criterias">
+          <div class="location">
+            <input
+              class="loc-slider"
+              type="range"
+              min="0"
+              max="100"
+              value="20"
+              step="5"
+            />
+            <p>location: <span class="loc-text">20</span> km</p>
+          </div>
+          <div class="similarity"></div>
+          <input
+            class="sim-slider"
+            type="range"
+            min="0"
+            max="100"
+            value="80"
+            step="5"
+          />
+          <p>similarity: <span class="sim-text">80</span>%</p>
+          <button>Complete</button>
+        </div>
+      </div>
+      <div class="section"><p class="exp1">Finding People...</p></div>
+      <div class="section">
+        <p class="exp1">
+          Aciklamalar: Arkadas arayan kisiler oyun, online sohbet, veya disarida
+          gorusmek icin ariyor olabilir, hepsinin cevapladigi sorular farkli
+          kategorilerde olacak. Programin arkadas bulmasi biraz uzun surebilir.
+        </p>
+      </div>
+    </div>
+    <i class="fas fa-chevron-circle-right next-btn"></i>
+
+    <script src="script.js"></script>
+  </body>
+</html>
